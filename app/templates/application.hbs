@@ -1,5 +1,20 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<header>
+  <h1>Ember and Reddit</h1>
+  <p>It will not work until you click on the "Javascript" link.</p>
+
+</header>
+
+{{!--  Just In case for navigation--}}
+<nav>
+  {{#link-to "javascript"}}
+      Javascript
+  {{/link-to}}
+</nav>
+
+
 
 {{outlet}}
+
+<footer>
+  <p>&copy; ITP USC Yifan Wang</p>
+</footer>

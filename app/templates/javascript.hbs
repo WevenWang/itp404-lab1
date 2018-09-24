@@ -1,0 +1,16 @@
+
+{{!-- {{model[0].data.num_comments}} --}}
+
+<h3> Javascript Subreddit</h3>
+
+<ul>
+  {{#each model as |piece|}}
+    <li>num_commments: {{piece.data.num_comments}}</li>
+    <li>ups: {{piece.data.ups}}</li>
+    <li>downs: {{piece.data.downs}}</li>
+    <li>title: {{piece.data.title}}</li>
+    <li>domain: {{piece.data.domain}}</li>
+    <li>====================================</li>
+  {{/each}}
+</ul>
+{{outlet}}
